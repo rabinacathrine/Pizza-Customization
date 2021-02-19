@@ -101,18 +101,31 @@ export default function Customize({ingredients, setIngredients}){
             </div>
             <div style={{border:"2px solid black",flex:1}}>
                 {/* Checkbox */}
+                <label for="pineapple" className="container">Pineapple
                 <input type="checkbox" checked={ingredients["pineapple"]}id="pineapple" name="pineapple" onChange={(event)=>onChange(event.currentTarget.checked,"pineapple")}/>
-                <label for="pineapple">Pineapple</label>
+                <span class="checkmark"></span>
+                </label>
+                <label for="basil" className="container">Basil
                 <input type="checkbox" checked={ingredients["basil"]}id="basil" name="basil" onChange={(event)=>onChange(event.currentTarget.checked,"basil")}/>
-                <label for="basil">Basil</label>
+                <span class="checkmark"></span>
+                </label>
+                <label for="cheese" className="container">Cheese
                 <input type="checkbox" checked={ingredients["cheese"]}id="cheese" name="cheese" onChange={(event)=>onChange(event.currentTarget.checked,"cheese")}/>
-                <label for="cheese">Cheese</label>
+                
+                <span class="checkmark"></span>
+                </label>
+                <label for="mushroom" className="container">Mushroom
                 <input type="checkbox" checked={ingredients["mushroom"]}id="mushroom" name="mushroom" onChange={(event)=>onChange(event.currentTarget.checked,"mushroom")}/>
-                <label for="mushroom">Mushroom</label>
+                <span class="checkmark"></span>
+                </label>
+                <label for="olive" className="container">Olive
                 <input type="checkbox" checked={ingredients["olive"]}id="olive" name="olive" onChange={(event)=>onChange(event.currentTarget.checked,"olive")}/>
-                <label for="olive">Olive</label>
+                <span class="checkmark"></span>
+                </label>
+                <label for="tomato" className="container">Tomato
                 <input type="checkbox" checked={ingredients["tomato"]}id="tomato" name="tomato" onChange={(event)=>onChange(event.currentTarget.checked,"tomato")}/>
-                <label for="tomato">Tomato</label>
+                <span class="checkmark"></span>
+                </label>
                 <button onClick={()=>history.push("/checkout")}>Proceed to Checkout</button>
             </div>
         </div>
